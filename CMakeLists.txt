@@ -12,7 +12,7 @@ include_directories(${OpenCV_INCLUDE_DIRS})
 include_directories(${PROJECT_SOURCE_DIR}/include)
 
 FILE(GLOB_RECURSE sourcefiles)
-ADD_EXECUTABLE(${BIN_NAME} main.cpp ${sourcefiles})
+ADD_EXECUTABLE(${BIN_NAME} main.cpp ${sourcefiles} main.cpp)
 
 TARGET_LINK_LIBRARIES(${BIN_NAME} ${CMAKE_THREAD_LIBS_INIT})
 target_link_libraries(${BIN_NAME} ${OpenCV_LIBS})

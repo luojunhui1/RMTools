@@ -7,7 +7,7 @@ int main()
 
     int value1,value;
 
-    Mat src = Mat(480,640,CV_8UC3,Scalar(255,255,255));
+    Mat src = Mat(480,640,CV_8UC3,Scalar(0,0,0));
     auto *a =new DisPlayWaveCLASS(src, &value,"Display Window",100);
     auto *b =new DisPlayWaveCLASS(src, &value1,"Display Window1",100,Scalar(255,0,0),Scalar(255,255,0));
 
